@@ -1,13 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "sample",
-  "description": "This extension will convert all text on page to the word foot and change the background.",
+  "name": "dependabot rebase button",
+  "description": "add [@dependabot rebase] to PR comment",
   "version": "1.0",
   "browser_action": {
-    "default_icon": "images/icon_16.png",
-    "default_popup": "popup.html"
+    "default_icon": "images/icon.png"
   },
   "permissions": [
     "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
   ]
 }
