@@ -10,7 +10,8 @@ if (isDependabot) {
   // コメントを入力するセレクタ
   const textarea = document.getElementById('new_comment_field')
   // [Comment]ボタンが存在するセレクタ、今回はここに新しいボタンを追加します。
-  const leftBtnWrapper = document.querySelector('.color-bg-subtle.ml-1')
+  const btnWrapper = document.getElementById('partial-new-comment-form-actions')
+  const leftBtnWrapper = btnWrapper.querySelector('.color-bg-subtle.ml-1')
 
   // 実際に追加するボタンセレクタ
   const dependabotBtn = document.createElement('button')
