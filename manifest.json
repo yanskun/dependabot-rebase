@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "dependabot rebase button",
   "description": "add [@dependabot rebase] to PR comment",
-  "version": "1.1",
+  "version": "1.2",
   "icons": {
     "48": "images/icon_48.png",
     "128": "images/icon_128.png"
